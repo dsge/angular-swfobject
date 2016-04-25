@@ -1,5 +1,5 @@
 angular.module('swfobject', [])
-  .factory('SwfObject', ['$window', function ($window) {
+  .service('SwfObject', ['$window', function ($window) {
     return $window.swfobject;
   }])
   .directive('swfObject', ['$window', '$timeout', '$interval', 'SwfObject', function ($window, $timeout, $interval, SwfObject) {
