@@ -14,6 +14,6 @@
     "angular"
   ],
   "dependencies": {
-    "git+https://github.com/bholloway/swfobject.git": "#master"
+    "swfobject": "git+https://github.com/bholloway/swfobject.git#master"
   }
 }
