@@ -1,6 +1,6 @@
-angular.module('swfobject', [])
+require('angular').module('swfobject', [])
   .service('SwfObject', ['$window', function ($window) {
-    return $window.swfobject;
+    return require('swfobject');
   }])
   .directive('swfObject', ['$window', '$timeout', '$interval', 'SwfObject', function ($window, $timeout, $interval, SwfObject) {
     'use strict';
